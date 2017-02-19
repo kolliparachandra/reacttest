@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/kolliparachandra/reacttest#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "deep-freeze": "0.0.1",
     "expect": "^1.20.2",
     "lodash": "^4.17.4",
