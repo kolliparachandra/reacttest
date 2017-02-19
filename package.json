@@ -1,0 +1,26 @@
+{
+  "name": "reacttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolliparachandra/reacttest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kolliparachandra/reacttest/issues"
+  },
+  "homepage": "https://github.com/kolliparachandra/reacttest#readme",
+  "devDependencies": {
+    "deep-freeze": "0.0.1",
+    "expect": "^1.20.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0"
+  }
+}
