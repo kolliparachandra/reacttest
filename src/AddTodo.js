@@ -6,8 +6,8 @@ let AddTodo=({dispatch})=>{
 
  return(
      <div>
-         <input ref={node =>textInput=node} />
-         <button onClick={()=>{dispatch(addTodo(textInput.value))}}>Add Todo</button>
+         <input ref={node=>textInput=node} />
+         <button onClick={()=>{dispatch(addTodo(textInput.value));textInput.value=''}}>Add Todo</button>
          </div>
  )
 }

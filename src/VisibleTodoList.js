@@ -4,7 +4,7 @@ import {toggleTodo} from './ActionCreator'
 import TodoList from './TodoComponent'
 import {withRouter} from 'react-router'
 const mapStatetoProps=(state,ownProps)=>({
-todos:getVisibleTodos(state,ownProps.params.filter)
+todos:getVisibleTodos(state,ownProps.params.filter||'all')
 })
 const mapDispatchToProps=(dispatch)=>({
 onTodoClick:(id)=>{
