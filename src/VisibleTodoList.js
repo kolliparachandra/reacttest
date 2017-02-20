@@ -3,17 +3,13 @@ import {getVisibleTodos} from './reducers/reducer'
 import {toggleTodo} from './ActionCreator'
 import TodoList from './TodoComponent'
 import {withRouter} from 'react-router'
-const mapStatetoProps=(state,ownProps)=>({
-todos:getVisibleTodos(state,ownProps.params.filter||'all')
+const mapStatetoProps=(state,{params})=>({
+    todos:getVisibleTodos(state,params.filter||'all')
 })
-const mapDispatchToProps=(dispatch)=>({
-onTodoClick:(id)=>{
-    dispatch(toggleTodo(id))
-} 
-})
+
 const VisibleTodoList=withRouter(connect(
 mapStatetoProps,
-mapDispatchToProps
+{onTodoClick:toggleTodo}
 )(TodoList));
 
 export default VisibleTodoList;
