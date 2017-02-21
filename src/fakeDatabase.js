@@ -8,7 +8,7 @@ const fakeDatabase={
             },
             {
                 id:v4(),
-                completed:false,
+                completed:true,
                 text:'two'
             },
             {
