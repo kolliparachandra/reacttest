@@ -1,7 +1,10 @@
 import {v4} from 'uuid';
 import {getIsFetching} from './reducers'
 import * as api from './fakeDatabase'
-const requestTodos=(filter)=>()
+const requestTodos=(filter)=>({
+    type:'REQUEST_TODOS',
+    filter
+})
 
 export const addTodo=(text)=>(
     {
