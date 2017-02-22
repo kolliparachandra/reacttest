@@ -1,5 +1,10 @@
 import {v4} from 'uuid';
 import * as api from './fakeDatabase'
+export const requestTodos=(filter)=>({
+    type:'REQUEST_TODOS',
+    filter
+})
+
 export const addTodo=(text)=>(
     {
         type:'ADD_TODO',
