@@ -21,8 +21,9 @@ const fakeDatabase={
 const delay=(ms)=>new Promise(resolve=>setInterval(resolve,ms));
 
 export const fetchTodos=(filter)=>
-    delay(5000).then(()=>{
-    //    throw Error(`kaboom kabaam`)
+    delay(500).then(()=>{
+        if(Math.random()>0.5)
+            throw Error(`kaboom kabaam`)
     switch(filter){
         case 'all':
             return  fakeDatabase.todos;
