@@ -35,3 +35,16 @@ export const fetchTodos=(filter)=>
             throw Error(`Invalid filter specified ${filter}`)
     }
     });
+
+export const addTodo=(text)=>delay(500).then(()=>{
+    const todo={id:v4(),completed:false,text}
+    fakeDatabase.todos.push(todo);
+    return todo;
+}
+)
+
+export const toggleTodo=(id)=>delay(500).then(()=>{
+    const todo=fakeDatabase.todos.find((todo)=>todo.id === id);
+    todo.completed = !todo.completed;
+    return todo;
+})
